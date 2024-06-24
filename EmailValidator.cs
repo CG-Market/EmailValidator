@@ -9,7 +9,7 @@ public static class EmailValidator
 
     public static readonly string[] AllowedDomains = [
         "gmail.com", "yandex.ru", "yahoo.com",
-        "vk.com", "mail.ru", "bk.ru", "inbox.ru"
+        "vk.com", "mail.ru", "bk.ru", "inbox.ru",
         "rambler.ru", "outlook.com", "googlemail.com"]
     /// <summary>
     /// Checks if the given e-mail is valid using various techniques
