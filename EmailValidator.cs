@@ -28,8 +28,8 @@ public static class EmailValidator
 
         if (isValid)
         {
-            var arr = email.Split('@', StringSplitOptions.RemoveEmptyEntries);
-            isValid = arr.Length == 2 && arr[1].Contains(".") && AllowedDomains.Contains(arr[1].ToLower());
+            var arr = email.ToLower().Split('@', StringSplitOptions.RemoveEmptyEntries);
+            isValid = arr.Length == 2 && arr[1].Contains(".") && AllowedDomains.Contains(arr[1]);
         }
         return isValid;
     }
